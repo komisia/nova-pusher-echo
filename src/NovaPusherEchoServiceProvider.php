@@ -1,12 +1,12 @@
 <?php
 
-namespace Coreproc\NovaEcho;
+namespace Komisia\NovaPusherEcho;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
 
-class NovaEchoServiceProvider extends ServiceProvider
+class NovaPusherEchoServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.

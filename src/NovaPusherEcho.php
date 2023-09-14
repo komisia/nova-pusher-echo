@@ -1,8 +1,8 @@
 <?php
 
-namespace Coreproc\NovaEcho;
+namespace Komisia\NovaPusherEcho;
 
-class NovaEcho
+class NovaPusherEcho
 {
     public static function config($key, $default = null)
     {

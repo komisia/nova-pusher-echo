@@ -1,5 +1,5 @@
 {
-    "name": "coreproc/nova-echo",
+    "name": "komisia/nova-pusher-echo",
     "description": "Adds Laravel Echo with your broadcast configuration to your Laravel Nova app",
     "keywords": [
         "laravel",
@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Coreproc\\NovaEcho\\NovaEchoServiceProvider"
+                "Komisia\\NovaPusherEcho\\NovaPusherEchoServiceProvider"
             ]
         }
     },
