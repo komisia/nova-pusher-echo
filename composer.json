@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Coreproc\\NovaEcho\\": "src/"
+            "Komisia\\NovaPusherEcho\\": "src/"
         }
     },
     "extra": {
