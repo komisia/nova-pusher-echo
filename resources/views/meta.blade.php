@@ -2,32 +2,32 @@
 
     <meta name="broadcaster" content="{{ config('broadcasting.connections.' . config('broadcasting.nova', config('broadcasting.default')) . '.broadcaster', config('broadcasting.nova', config('broadcasting.default'))) }}">
 
-    @if(!is_null(\Coreproc\NovaEcho\NovaEcho::config('host')))
-      <meta name="host" content="{{ \Coreproc\NovaEcho\NovaEcho::config('host') }}">
+    @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('host')))
+      <meta name="host" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('host') }}">
     @endif
 
-    @if(!is_null(\Coreproc\NovaEcho\NovaEcho::config('key')))
-      <meta name="pusher_key" content="{{ \Coreproc\NovaEcho\NovaEcho::config('key') }}">
+    @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('key')))
+      <meta name="pusher_key" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('key') }}">
     @endif
 
-    @if(!is_null(\Coreproc\NovaEcho\NovaEcho::config('options.cluster')))
-      <meta name="pusher_cluster" content="{{ \Coreproc\NovaEcho\NovaEcho::config('options.cluster') }}">
+    @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('options.cluster')))
+      <meta name="pusher_cluster" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('options.cluster') }}">
     @endif
 
-    @if(!is_null(\Coreproc\NovaEcho\NovaEcho::config('options.encrypted')))
-      <meta name="pusher_encrypted" content="{{ \Coreproc\NovaEcho\NovaEcho::config('options.encrypted') ? 1 : 0 }}">
+    @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('options.encrypted')))
+      <meta name="pusher_encrypted" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('options.encrypted') ? 1 : 0 }}">
     @endif
 
-    @if(!is_null(\Coreproc\NovaEcho\NovaEcho::config('options.host')))
-      <meta name="pusher_host" content="{{ \Coreproc\NovaEcho\NovaEcho::config('options.host') }}">
+    @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('options.host')))
+      <meta name="pusher_host" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('options.host') }}">
     @endif
 
-    @if(!is_null(\Coreproc\NovaEcho\NovaEcho::config('options.port')))
-      <meta name="pusher_port" content="{{ \Coreproc\NovaEcho\NovaEcho::config('options.port') }}">
+    @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('options.port')))
+      <meta name="pusher_port" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('options.port') }}">
     @endif
 
-    @if(!is_null(\Coreproc\NovaEcho\NovaEcho::config('auth_endpoint')))
-      <meta name="auth_endpoint" content="{{ \Coreproc\NovaEcho\NovaEcho::config('auth_endpoint') }}">
+    @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('auth_endpoint')))
+      <meta name="auth_endpoint" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('auth_endpoint') }}">
     @endif
 
     @if(method_exists(request()->user(), 'receivesBroadcastNotificationsOn'))
