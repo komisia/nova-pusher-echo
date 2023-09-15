@@ -11,7 +11,7 @@
     @endif
 
     @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('options.host')))
-      <meta name="pusher_wsHost" content="{{ \Komisia\NovaPusherEcho\NovaPusherEcho::config('options.host') }}">
+      <meta name="pusher_wsHost" content="{{ str_replace('api-', 'ws-', \Komisia\NovaPusherEcho\NovaPusherEcho::config('options.host') ) }}">
     @endif
 
     @if(!is_null(\Komisia\NovaPusherEcho\NovaPusherEcho::config('options.port')))
